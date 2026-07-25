@@ -24,3 +24,97 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+/* ===========================
+   HERO GRID BACKGROUND
+=========================== */
+
+.hero-grid {
+  background-color: #0A0C14;
+
+  background-image:
+    linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px);
+
+  background-size: 88px 88px;
+}
+
+
+/* ===========================
+   BODY
+=========================== */
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  background:#0A0C14;
+  color:white;
+  overflow-x:hidden;
+}
+
+
+/* ===========================
+   SELECTION
+=========================== */
+
+::selection{
+  background:#6B63FF;
+  color:white;
+}
+
+
+/* ===========================
+   SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar{
+  width:8px;
+}
+
+::-webkit-scrollbar-track{
+  background:#0A0C14;
+}
+
+::-webkit-scrollbar-thumb{
+  background:#2f3652;
+  border-radius:100px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background:#4d5eff;
+}
+
+
+/* ===========================
+   IMAGE
+=========================== */
+
+img{
+  user-select:none;
+  -webkit-user-drag:none;
+}
+/* ===========================
+   PRINCIPLES MARQUEE
+=========================== */
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 28s linear infinite;
+  will-change: transform;
+}
+
+.group:hover .marquee {
+  animation-play-state: paused;
+}
