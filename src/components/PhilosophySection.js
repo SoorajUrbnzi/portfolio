@@ -4,23 +4,12 @@ export default function PhilosophySection() {
   return (
     <section
       id="philosophy"
-      className="relative overflow-hidden bg-[#090B13] pt-8 pb-16 lg:pt-14 lg:pb-24"
+      className="relative overflow-hidden bg-[#080B14] pt-8 pb-16 lg:pt-14 lg:pb-24"
     >
 
       {/* Background Grid */}
 
-      <div className="absolute inset-0 hero-grid opacity-[0.25]"></div>
-
-
-      {/* Left Glow */}
-
-      <div className="absolute -left-60 top-0 h-[700px] w-[700px] rounded-full bg-[#655BFF]/10 blur-[170px]"></div>
-
-
-      {/* Right Glow */}
-
-      <div className="absolute -right-60 bottom-0 h-[600px] w-[600px] rounded-full bg-cyan-400/5 blur-[170px]"></div>
-
+      <div className="absolute inset-0 hero-grid opacity-[0.18]"></div>
 
 
       <div className="relative z-10 mx-auto max-w-[1220px] px-5 sm:px-6">
@@ -85,25 +74,20 @@ export default function PhilosophySection() {
 
 
           <p className="mt-4 text-[18px] sm:text-[20px] lg:text-[23px] leading-[1.45] text-[#D2D7E4]">
-
             Technology has never been just a profession for me.
             It is how I think, create, and solve problems.
-
           </p>
 
 
           <p className="mt-4 text-[16px] sm:text-[18px] lg:text-[20px] leading-[1.55] text-[#8D94A7]">
-
             I am Abhishek, the Founder of Urbanzi Solutions LLP.
             My journey is driven by curiosity, discipline,
             and a desire to transform ideas into products
             that people trust and enjoy using.
-
           </p>
 
 
           <p className="mt-4 text-[16px] sm:text-[18px] lg:text-[20px] leading-[1.55] text-[#8D94A7]">
-
             My work combines design, development,
             and strategic thinking to build digital
             experiences that are intuitive,
@@ -112,11 +96,11 @@ export default function PhilosophySection() {
             Every project is an opportunity to learn,
             improve and create something that
             makes a lasting impact.
-
           </p>
 
 
         </div>
+
 
 
 
@@ -158,31 +142,25 @@ export default function PhilosophySection() {
 
 
           <p className="mt-4 text-[18px] sm:text-[20px] lg:text-[23px] leading-[1.45] text-[#D2D7E4]">
-
             Great products don't begin with code.
             They begin with understanding.
-
           </p>
 
 
           <p className="mt-4 text-[16px] sm:text-[18px] lg:text-[20px] leading-[1.55] text-[#8D94A7]">
-
             Understanding people.
             Understanding problems.
             Understanding why something deserves
             to exist before deciding how to build it.
-
           </p>
 
 
           <p className="mt-4 text-[16px] sm:text-[18px] lg:text-[20px] leading-[1.55] text-[#8D94A7]">
-
             Technology is only valuable when it
             serves a meaningful purpose.
             Design is only successful when it becomes
             invisible. The best digital experiences
             feel natural, effortless, and timeless.
-
           </p>
 
 

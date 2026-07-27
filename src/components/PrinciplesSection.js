@@ -13,30 +13,13 @@ const loopItems = [...principles, ...principles];
 
 export default function PrinciplesSection() {
   return (
-    <section className="relative overflow-hidden bg-[#090B13] pt-2 pb-12 md:pt-6 md:pb-20">
+    <section className="relative overflow-hidden bg-[#080B14] pt-2 pb-12 md:pt-6 md:pb-20">
 
 
-      {/* Background Grid - Reduced Opacity */}
+      {/* Background Grid */}
 
-      <div className="absolute inset-0 hero-grid opacity-[0.25]"></div>
+      <div className="absolute inset-0 hero-grid opacity-[0.18]"></div>
 
-
-      {/* Dark Overlay */}
-
-      <div className="absolute inset-0 bg-[#090B13]/40"></div>
-
-
-
-
-      {/* Left Glow */}
-
-      <div className="absolute -left-64 top-0 h-[650px] w-[650px] rounded-full bg-[#655BFF]/8 blur-[170px]" />
-
-
-
-      {/* Right Glow */}
-
-      <div className="absolute -right-64 bottom-0 h-[550px] w-[550px] rounded-full bg-cyan-400/5 blur-[170px]" />
 
 
 

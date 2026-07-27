@@ -4,28 +4,12 @@ export default function AboutUrbanziSection() {
   return (
     <section
       id="urbanzi"
-      className="relative overflow-hidden bg-[#090B13] pt-8 pb-20 lg:pt-12 lg:pb-32"
+      className="relative overflow-hidden bg-[#080B14] pt-8 pb-20 lg:pt-12 lg:pb-32"
     >
 
-      {/* Background Grid - Reduced Opacity */}
+      {/* Background Grid */}
 
-      <div className="absolute inset-0 hero-grid opacity-[0.25]"></div>
-
-
-      {/* Dark Overlay */}
-
-      <div className="absolute inset-0 bg-[#090B13]/40"></div>
-
-
-
-      {/* Left Glow */}
-
-      <div className="absolute -left-64 top-0 h-[700px] w-[700px] rounded-full bg-[#655BFF]/8 blur-[170px]" />
-
-
-      {/* Right Glow */}
-
-      <div className="absolute -right-64 bottom-0 h-[600px] w-[600px] rounded-full bg-cyan-400/5 blur-[170px]" />
+      <div className="absolute inset-0 hero-grid opacity-[0.18]"></div>
 
 
 
@@ -59,6 +43,7 @@ export default function AboutUrbanziSection() {
 
 
 
+
         {/* Main Card */}
 
         <div
@@ -68,7 +53,7 @@ export default function AboutUrbanziSection() {
             sm:rounded-[32px]
             border
             border-[#34384A]
-            bg-[#14161E]/90
+            bg-[#11131B]/90
             backdrop-blur-xl
             p-5
             sm:p-10
@@ -93,6 +78,7 @@ export default function AboutUrbanziSection() {
 
 
 
+
           {/* Title */}
 
           <h3 className="mt-4 text-[28px] font-bold leading-tight tracking-[-0.03em] text-white sm:mt-5 sm:text-[38px] lg:text-[46px]">
@@ -100,6 +86,7 @@ export default function AboutUrbanziSection() {
             About Urbanzi Solutions LLP
 
           </h3>
+
 
 
 
@@ -113,6 +100,7 @@ export default function AboutUrbanziSection() {
             businesses move forward with confidence.
 
           </p>
+
 
 
 
@@ -131,6 +119,7 @@ export default function AboutUrbanziSection() {
 
 
 
+
           {/* Paragraph 3 */}
 
           <p className="mt-3 text-[16px] leading-[1.65] text-[#8E95A8] sm:mt-4 sm:text-[21px] sm:leading-[1.75]">
@@ -141,6 +130,7 @@ export default function AboutUrbanziSection() {
             to grow for years to come.
 
           </p>
+
 
 
 

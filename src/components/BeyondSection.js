@@ -22,29 +22,14 @@ const cards = [
 
 export default function BeyondSection() {
   return (
-    <section className="relative overflow-hidden bg-[#0A0C14] py-5 md:py-16">
+    <section className="relative overflow-hidden bg-[#080B14] py-5 md:py-16">
 
 
-      {/* Background Grid - Reduced Opacity */}
+      {/* Background Grid */}
 
-      <div className="absolute inset-0 hero-grid opacity-[0.25]" />
-
-
-      {/* Dark Overlay */}
-
-      <div className="absolute inset-0 bg-[#0A0C14]/40" />
+      <div className="absolute inset-0 hero-grid opacity-[0.18]" />
 
 
-
-      {/* Left Glow */}
-
-      <div className="absolute -left-72 top-0 h-[700px] w-[700px] rounded-full bg-[#655BFF]/8 blur-[180px]" />
-
-
-
-      {/* Right Glow */}
-
-      <div className="absolute -right-72 bottom-0 h-[650px] w-[650px] rounded-full bg-cyan-400/5 blur-[180px]" />
 
 
 
@@ -95,7 +80,8 @@ export default function BeyondSection() {
               rounded-[24px]
               border
               border-white/10
-              bg-[#181B23]
+              bg-[#11131B]/90
+              backdrop-blur-xl
               px-5
               py-5
               transition-all
@@ -106,18 +92,6 @@ export default function BeyondSection() {
               sm:py-8
               "
             >
-
-
-
-              {/* Hover Glow */}
-
-              <div className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(101,91,255,0.10),transparent_65%)]" />
-
-              </div>
-
-
 
 
 

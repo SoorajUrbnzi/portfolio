@@ -75,7 +75,8 @@ export default function FinalStatement() {
             className="
             relative
             mb-8
-            text-center
+            text-left
+            sm:text-center
             font-medium
             uppercase
             tracking-[0.28em]
@@ -98,7 +99,8 @@ export default function FinalStatement() {
             relative
             mx-auto
             max-w-5xl
-            text-center
+            text-left
+            sm:text-center
             font-bold
             text-white
             leading-[1.25]
@@ -110,17 +112,28 @@ export default function FinalStatement() {
             "
           >
 
-            ”Technology changes every day.
-            <br />
-            Purpose does not.
-            <br />
-            The products we build may evolve.
-            <br />
-            The values behind them should never
-            <br />
-            change.”
+            <span className="sm:hidden">
+              ”Technology changes every day.
+              Purpose does not.
+              The products we build may evolve.
+              The values behind them should never change.”
+            </span>
+
+
+            <span className="hidden sm:block">
+              ”Technology changes every day.
+              <br />
+              Purpose does not.
+              <br />
+              The products we build may evolve.
+              <br />
+              The values behind them should never
+              <br />
+              change.”
+            </span>
 
           </h5>
+
 
 
 
@@ -133,7 +146,8 @@ export default function FinalStatement() {
             mx-auto
             mt-10
             max-w-3xl
-            text-center
+            text-left
+            sm:text-center
             text-[#9CA3C4]
             text-[14px]
             leading-7
@@ -148,6 +162,7 @@ export default function FinalStatement() {
             create.
 
           </p>
+
 
 
 
