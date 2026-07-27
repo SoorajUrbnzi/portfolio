@@ -24,9 +24,16 @@ export default function BeyondSection() {
   return (
     <section className="relative overflow-hidden bg-[#0A0C14] py-5 md:py-16">
 
-      {/* Background Grid */}
 
-      <div className="absolute inset-0 hero-grid" />
+      {/* Background Grid - Reduced Opacity */}
+
+      <div className="absolute inset-0 hero-grid opacity-[0.25]" />
+
+
+      {/* Dark Overlay */}
+
+      <div className="absolute inset-0 bg-[#0A0C14]/40" />
+
 
 
       {/* Left Glow */}
@@ -34,12 +41,15 @@ export default function BeyondSection() {
       <div className="absolute -left-72 top-0 h-[700px] w-[700px] rounded-full bg-[#655BFF]/8 blur-[180px]" />
 
 
+
       {/* Right Glow */}
 
       <div className="absolute -right-72 bottom-0 h-[650px] w-[650px] rounded-full bg-cyan-400/5 blur-[180px]" />
 
 
+
       <div className="relative z-10 mx-auto max-w-[1400px] px-5 sm:px-6">
+
 
 
         {/* Heading */}
@@ -65,9 +75,13 @@ export default function BeyondSection() {
         </div>
 
 
+
+
+
         {/* Cards */}
 
         <div className="grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-8">
+
 
 
           {cards.map((card) => (
@@ -94,6 +108,7 @@ export default function BeyondSection() {
             >
 
 
+
               {/* Hover Glow */}
 
               <div className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
@@ -103,7 +118,11 @@ export default function BeyondSection() {
               </div>
 
 
+
+
+
               <div className="relative z-10">
+
 
 
                 {/* Number */}
@@ -115,6 +134,9 @@ export default function BeyondSection() {
                 </span>
 
 
+
+
+
                 {/* Title */}
 
                 <h3 className="mt-4 text-[24px] font-semibold tracking-[-0.03em] text-white sm:mt-5 sm:text-[28px]">
@@ -122,6 +144,9 @@ export default function BeyondSection() {
                   {card.title}
 
                 </h3>
+
+
+
 
 
                 {/* Paragraphs */}
@@ -150,6 +175,9 @@ export default function BeyondSection() {
 
 
                 </div>
+
+
+
 
 
                 {/* Highlight */}

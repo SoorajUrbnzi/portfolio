@@ -6,20 +6,31 @@ export default function AboutUrbanziSection() {
       id="urbanzi"
       className="relative overflow-hidden bg-[#090B13] pt-8 pb-20 lg:pt-12 lg:pb-32"
     >
-      {/* Background Grid */}
 
-      <div className="absolute inset-0 hero-grid"></div>
+      {/* Background Grid - Reduced Opacity */}
+
+      <div className="absolute inset-0 hero-grid opacity-[0.25]"></div>
+
+
+      {/* Dark Overlay */}
+
+      <div className="absolute inset-0 bg-[#090B13]/40"></div>
+
+
 
       {/* Left Glow */}
 
       <div className="absolute -left-64 top-0 h-[700px] w-[700px] rounded-full bg-[#655BFF]/8 blur-[170px]" />
+
 
       {/* Right Glow */}
 
       <div className="absolute -right-64 bottom-0 h-[600px] w-[600px] rounded-full bg-cyan-400/5 blur-[170px]" />
 
 
+
       <div className="relative z-10 mx-auto max-w-[1280px] px-5 sm:px-6">
+
 
 
         {/* Section Heading */}
@@ -47,6 +58,7 @@ export default function AboutUrbanziSection() {
 
 
 
+
         {/* Main Card */}
 
         <div
@@ -69,6 +81,7 @@ export default function AboutUrbanziSection() {
         >
 
 
+
           {/* Number */}
 
           <p className="font-mono text-[15px] font-semibold text-[#F4B72A] transition-colors duration-500 group-hover:text-[#FFD86A] sm:text-[18px]">
@@ -76,6 +89,7 @@ export default function AboutUrbanziSection() {
             05
 
           </p>
+
 
 
 
@@ -89,6 +103,7 @@ export default function AboutUrbanziSection() {
 
 
 
+
           {/* Paragraph 1 */}
 
           <p className="mt-5 text-[16px] leading-[1.65] text-[#8E95A8] sm:mt-6 sm:text-[21px] sm:leading-[1.75]">
@@ -98,6 +113,7 @@ export default function AboutUrbanziSection() {
             businesses move forward with confidence.
 
           </p>
+
 
 
 
@@ -114,6 +130,7 @@ export default function AboutUrbanziSection() {
 
 
 
+
           {/* Paragraph 3 */}
 
           <p className="mt-3 text-[16px] leading-[1.65] text-[#8E95A8] sm:mt-4 sm:text-[21px] sm:leading-[1.75]">
@@ -124,6 +141,7 @@ export default function AboutUrbanziSection() {
             to grow for years to come.
 
           </p>
+
 
 
 
@@ -153,19 +171,20 @@ export default function AboutUrbanziSection() {
 
                 View our work at Urbanzi.in
 
+
                 <span
                   className="
-                  absolute
-                  left-0
-                  -bottom-2
-                  h-[1px]
-                  w-full
-                  origin-left
-                  scale-x-100
-                  bg-[#46A9FF]
-                  transition-transform
-                  duration-500
-                  group-hover/link:scale-x-0
+                    absolute
+                    left-0
+                    -bottom-2
+                    h-[1px]
+                    w-full
+                    origin-left
+                    scale-x-100
+                    bg-[#46A9FF]
+                    transition-transform
+                    duration-500
+                    group-hover/link:scale-x-0
                   "
                 />
 
@@ -174,10 +193,10 @@ export default function AboutUrbanziSection() {
 
               <span
                 className="
-                transition-transform
-                duration-300
-                group-hover/link:translate-x-1
-                group-hover/link:-translate-y-1
+                  transition-transform
+                  duration-300
+                  group-hover/link:translate-x-1
+                  group-hover/link:-translate-y-1
                 "
               >
                 ↗

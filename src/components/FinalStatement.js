@@ -8,6 +8,7 @@ export default function FinalStatement() {
       id="statement"
       className="relative overflow-hidden bg-[#090B14] px-4 py-8 sm:px-5 sm:py-12"
     >
+
       {/* Grid Background */}
 
       <div
@@ -67,19 +68,20 @@ export default function FinalStatement() {
           />
 
 
+
           {/* Heading */}
 
           <p
             className="
             relative
-            mb-6
+            mb-8
             text-center
             font-medium
             uppercase
-            tracking-[0.22em]
+            tracking-[0.28em]
             text-[#35A2FF]
             text-[11px]
-            sm:mb-8
+            sm:mb-10
             sm:text-[13px]
             "
           >
@@ -88,21 +90,23 @@ export default function FinalStatement() {
 
 
 
+
           {/* Quote */}
 
-          <h2
+          <h5
             className="
             relative
             mx-auto
-            max-w-4xl
+            max-w-5xl
             text-center
             font-bold
             text-white
-            leading-[1.35]
-            tracking-[-0.03em]
-            text-[28px]
-            sm:text-[38px]
-            md:text-[54px]
+            leading-[1.25]
+            tracking-[-0.02em]
+            text-[24px]
+            sm:text-[30px]
+            md:text-[36px]
+            lg:text-[38px]
             "
           >
 
@@ -113,10 +117,11 @@ export default function FinalStatement() {
             The products we build may evolve.
             <br />
             The values behind them should never
-            <br className="hidden sm:block" />
+            <br />
             change.”
 
-          </h2>
+          </h5>
+
 
 
 
@@ -126,13 +131,13 @@ export default function FinalStatement() {
             className="
             relative
             mx-auto
-            mt-6
-            max-w-2xl
+            mt-10
+            max-w-3xl
             text-center
             text-[#9CA3C4]
             text-[14px]
             leading-7
-            sm:mt-8
+            sm:mt-12
             sm:text-[17px]
             sm:leading-8
             "
@@ -152,11 +157,11 @@ export default function FinalStatement() {
           <div
             className="
             relative
-            mt-8
+            mt-10
             flex
             flex-col
             items-center
-            sm:mt-10
+            sm:mt-12
             "
           >
 

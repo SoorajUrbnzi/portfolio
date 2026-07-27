@@ -9,7 +9,7 @@ export default function PhilosophySection() {
 
       {/* Background Grid */}
 
-      <div className="absolute inset-0 hero-grid"></div>
+      <div className="absolute inset-0 hero-grid opacity-[0.25]"></div>
 
 
       {/* Left Glow */}
@@ -48,6 +48,7 @@ export default function PhilosophySection() {
           </h2>
 
         </div>
+
 
 
 
@@ -119,9 +120,8 @@ export default function PhilosophySection() {
 
 
 
-        {/* Space */}
-
         <div className="h-3 lg:h-5"></div>
+
 
 
 
@@ -190,6 +190,7 @@ export default function PhilosophySection() {
 
 
       </div>
+
 
     </section>
   );
