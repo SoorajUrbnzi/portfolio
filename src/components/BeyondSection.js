@@ -22,7 +22,7 @@ const cards = [
 
 export default function BeyondSection() {
   return (
-    <section className="relative overflow-hidden bg-[#0A0C14] py-20 md:py-28">
+    <section className="relative overflow-hidden bg-[#0A0C14] py-5 md:py-16">
 
       {/* Background Grid */}
 
@@ -44,7 +44,7 @@ export default function BeyondSection() {
 
         {/* Heading */}
 
-        <div className="mb-10 flex items-center gap-3 sm:mb-14 sm:gap-5">
+        <div className="mb-4 flex items-center gap-3 sm:mb-8 sm:gap-5">
 
 
           <span className="text-[18px] font-light text-[#3FA9FF] sm:text-[22px]">
@@ -67,14 +67,30 @@ export default function BeyondSection() {
 
         {/* Cards */}
 
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8">
+        <div className="grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-8">
 
 
           {cards.map((card) => (
 
             <div
               key={card.number}
-              className="group relative overflow-hidden rounded-[24px] border border-white/10 bg-[#181B23] px-5 py-6 transition-all duration-500 hover:border-[#5B63FF]/60 sm:rounded-[28px] sm:px-10 sm:py-10"
+              className="
+              group
+              relative
+              overflow-hidden
+              rounded-[24px]
+              border
+              border-white/10
+              bg-[#181B23]
+              px-5
+              py-5
+              transition-all
+              duration-500
+              hover:border-[#5B63FF]/60
+              sm:rounded-[28px]
+              sm:px-10
+              sm:py-8
+              "
             >
 
 
@@ -101,7 +117,7 @@ export default function BeyondSection() {
 
                 {/* Title */}
 
-                <h3 className="mt-5 text-[24px] font-semibold tracking-[-0.03em] text-white sm:mt-6 sm:text-[28px]">
+                <h3 className="mt-4 text-[24px] font-semibold tracking-[-0.03em] text-white sm:mt-5 sm:text-[28px]">
 
                   {card.title}
 
@@ -110,14 +126,20 @@ export default function BeyondSection() {
 
                 {/* Paragraphs */}
 
-                <div className="mt-6 space-y-6 sm:mt-8 sm:space-y-8">
+                <div className="mt-5 space-y-5 sm:mt-6 sm:space-y-6">
 
 
                   {card.content.map((paragraph, index) => (
 
                     <p
                       key={index}
-                      className="text-[16px] leading-[1.8] text-[#8E95A8] sm:text-[19px] sm:leading-[2]"
+                      className="
+                      text-[16px]
+                      leading-[1.7]
+                      text-[#8E95A8]
+                      sm:text-[19px]
+                      sm:leading-[1.85]
+                      "
                     >
 
                       {paragraph}
@@ -134,7 +156,7 @@ export default function BeyondSection() {
 
                 {card.highlight && (
 
-                  <p className="mt-6 text-[18px] font-semibold text-white sm:mt-8 sm:text-[20px]">
+                  <p className="mt-5 text-[18px] font-semibold text-white sm:mt-6 sm:text-[20px]">
 
                     {card.highlight}
 

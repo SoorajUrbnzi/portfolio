@@ -4,25 +4,31 @@ export default function PhilosophySection() {
   return (
     <section
       id="philosophy"
-      className="relative overflow-hidden bg-[#090B13] py-20 lg:py-32"
+      className="relative overflow-hidden bg-[#090B13] pt-8 pb-16 lg:pt-14 lg:pb-24"
     >
+
       {/* Background Grid */}
 
       <div className="absolute inset-0 hero-grid"></div>
+
 
       {/* Left Glow */}
 
       <div className="absolute -left-60 top-0 h-[700px] w-[700px] rounded-full bg-[#655BFF]/10 blur-[170px]"></div>
 
+
       {/* Right Glow */}
 
       <div className="absolute -right-60 bottom-0 h-[600px] w-[600px] rounded-full bg-cyan-400/5 blur-[170px]"></div>
 
+
+
       <div className="relative z-10 mx-auto max-w-[1220px] px-5 sm:px-6">
+
 
         {/* Heading */}
 
-        <div className="mb-10 flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:gap-5 lg:mb-14">
+        <div className="mb-8 flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:gap-5 lg:mb-10">
 
           <div className="flex items-center gap-3 sm:gap-5">
 
@@ -36,14 +42,18 @@ export default function PhilosophySection() {
 
           </div>
 
+
           <h2 className="text-[30px] font-bold tracking-[-0.03em] text-white sm:text-[38px] lg:text-[50px]">
             Who I Am & My Philosophy
           </h2>
 
         </div>
 
-        {/* ================= CARD 01 ================= */}
-                <div
+
+
+        {/* CARD 01 */}
+
+        <div
           className="
           group
           rounded-[24px]
@@ -60,37 +70,28 @@ export default function PhilosophySection() {
           hover:-translate-y-1
           hover:border-[#6B63FF]
           hover:shadow-[0_0_45px_rgba(107,99,255,.18)]
-        "
+          "
         >
 
-          {/* Number */}
-
-          <p className="font-mono text-[16px] lg:text-[18px] font-semibold text-[#F5BE32] transition-colors duration-500 group-hover:text-[#FFD86A]">
-
+          <p className="font-mono text-[16px] lg:text-[18px] font-semibold text-[#F5BE32]">
             01
-
           </p>
 
-          {/* Title */}
 
-          <h3 className="mt-5 lg:mt-6 text-[30px] sm:text-[38px] lg:text-[46px] font-bold tracking-[-0.03em] text-white transition-colors duration-500 group-hover:text-white">
-
+          <h3 className="mt-4 text-[30px] sm:text-[38px] lg:text-[46px] font-bold tracking-[-0.03em] text-white">
             Who I Am
-
           </h3>
 
-          {/* Highlight */}
 
-          <p className="mt-7 lg:mt-10 text-[18px] sm:text-[20px] lg:text-[23px] leading-[1.8] text-[#D2D7E4]">
+          <p className="mt-4 text-[18px] sm:text-[20px] lg:text-[23px] leading-[1.45] text-[#D2D7E4]">
 
             Technology has never been just a profession for me.
             It is how I think, create, and solve problems.
 
           </p>
 
-          {/* Paragraph */}
 
-          <p className="mt-7 lg:mt-10 text-[16px] sm:text-[18px] lg:text-[20px] leading-[1.9] lg:leading-[2] text-[#8D94A7]">
+          <p className="mt-4 text-[16px] sm:text-[18px] lg:text-[20px] leading-[1.55] text-[#8D94A7]">
 
             I am Abhishek, the Founder of Urbanzi Solutions LLP.
             My journey is driven by curiosity, discipline,
@@ -99,7 +100,8 @@ export default function PhilosophySection() {
 
           </p>
 
-          <p className="mt-6 lg:mt-8 text-[16px] sm:text-[18px] lg:text-[20px] leading-[1.9] lg:leading-[2] text-[#8D94A7]">
+
+          <p className="mt-4 text-[16px] sm:text-[18px] lg:text-[20px] leading-[1.55] text-[#8D94A7]">
 
             My work combines design, development,
             and strategic thinking to build digital
@@ -112,14 +114,20 @@ export default function PhilosophySection() {
 
           </p>
 
+
         </div>
+
+
 
         {/* Space */}
 
-        <div className="h-6 lg:h-10"></div>
+        <div className="h-3 lg:h-5"></div>
 
-        {/* ================= CARD 02 ================= */}
-                <div
+
+
+        {/* CARD 02 */}
+
+        <div
           className="
           group
           rounded-[24px]
@@ -136,37 +144,28 @@ export default function PhilosophySection() {
           hover:-translate-y-1
           hover:border-[#6B63FF]
           hover:shadow-[0_0_45px_rgba(107,99,255,.18)]
-        "
+          "
         >
 
-          {/* Number */}
-
-          <p className="font-mono text-[16px] lg:text-[18px] font-semibold text-[#F5BE32] transition-colors duration-500 group-hover:text-[#FFD86A]">
-
+          <p className="font-mono text-[16px] lg:text-[18px] font-semibold text-[#F5BE32]">
             02
-
           </p>
 
-          {/* Title */}
 
-          <h3 className="mt-5 lg:mt-6 text-[30px] sm:text-[38px] lg:text-[46px] font-bold tracking-[-0.03em] text-white transition-colors duration-500 group-hover:text-white">
-
+          <h3 className="mt-4 text-[30px] sm:text-[38px] lg:text-[46px] font-bold tracking-[-0.03em] text-white">
             My Philosophy
-
           </h3>
 
-          {/* Highlight */}
 
-          <p className="mt-7 lg:mt-10 text-[18px] sm:text-[20px] lg:text-[23px] leading-[1.8] text-[#D2D7E4]">
+          <p className="mt-4 text-[18px] sm:text-[20px] lg:text-[23px] leading-[1.45] text-[#D2D7E4]">
 
             Great products don't begin with code.
             They begin with understanding.
 
           </p>
 
-          {/* Paragraph */}
 
-          <p className="mt-7 lg:mt-10 text-[16px] sm:text-[18px] lg:text-[20px] leading-[1.9] lg:leading-[2] text-[#8D94A7]">
+          <p className="mt-4 text-[16px] sm:text-[18px] lg:text-[20px] leading-[1.55] text-[#8D94A7]">
 
             Understanding people.
             Understanding problems.
@@ -175,7 +174,8 @@ export default function PhilosophySection() {
 
           </p>
 
-          <p className="mt-6 lg:mt-8 text-[16px] sm:text-[18px] lg:text-[20px] leading-[1.9] lg:leading-[2] text-[#8D94A7]">
+
+          <p className="mt-4 text-[16px] sm:text-[18px] lg:text-[20px] leading-[1.55] text-[#8D94A7]">
 
             Technology is only valuable when it
             serves a meaningful purpose.
@@ -185,7 +185,9 @@ export default function PhilosophySection() {
 
           </p>
 
+
         </div>
+
 
       </div>
 

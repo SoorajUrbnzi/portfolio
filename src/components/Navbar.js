@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Navbar() {
@@ -86,30 +85,10 @@ export default function Navbar() {
 
       <div className="relative mx-auto max-w-[1700px] h-[70px] lg:h-[80px] px-4 sm:px-6 lg:px-10 flex items-center justify-between">
 
-        {/* Logo */}
+        {/* Left Empty Space */}
+        <div></div>
 
-        <Link
-          href="/"
-          className="flex items-center gap-2 lg:gap-3 flex-shrink-0"
-        >
-          <div className="relative h-[38px] w-[38px] lg:h-[44px] lg:w-[44px] overflow-hidden rounded-xl border border-[#7380FF]">
-
-            <Image
-              src="/photo.jpeg"
-              alt="Profile"
-              fill
-              priority
-              className="object-cover"
-            />
-
-          </div>
-
-          <h1 className="text-[14px] sm:text-[16px] lg:text-[18px] font-semibold tracking-[-0.02em] text-white whitespace-nowrap">
-            Urbanzi Solutions LLP
-          </h1>
-
-        </Link>
-                {/* Desktop Navigation */}
+        {/* Desktop Navigation */}
 
         <nav className="hidden lg:block">
           <ul className="flex items-center gap-14">
@@ -177,6 +156,7 @@ export default function Navbar() {
         </button>
 
       </div>
+
 
       {/* Mobile Menu */}
 

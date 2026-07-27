@@ -13,7 +13,7 @@ const loopItems = [...principles, ...principles];
 
 export default function PrinciplesSection() {
   return (
-    <section className="relative overflow-hidden bg-[#090B13] py-20 md:py-28">
+    <section className="relative overflow-hidden bg-[#090B13] pt-2 pb-12 md:pt-6 md:pb-20">
 
       {/* Background Grid */}
 
@@ -35,31 +35,26 @@ export default function PrinciplesSection() {
 
         {/* Heading */}
 
-        <div className="mb-12 flex items-center gap-3 px-5 sm:gap-5 sm:px-6 md:mb-20">
+        <div className="mb-5 flex items-center gap-3 px-5 sm:gap-5 sm:px-6 md:mb-8">
 
 
           <span className="text-[#49AFFF] text-[18px] font-light sm:text-[22px]">
-
             /
-
           </span>
 
 
           <span className="font-mono text-[#49AFFF] text-[14px] sm:text-[17px]">
-
             06
-
           </span>
 
 
           <h2 className="text-[32px] font-bold tracking-[-0.03em] text-white sm:text-[40px] md:text-[52px]">
-
             Principles
-
           </h2>
 
 
         </div>
+
 
 
         {/* Top Divider */}
@@ -67,9 +62,10 @@ export default function PrinciplesSection() {
         <div className="h-px w-full bg-white/10"></div>
 
 
+
         {/* Marquee */}
 
-        <div className="group overflow-hidden py-7 sm:py-10">
+        <div className="group overflow-hidden py-3 sm:py-5">
 
 
           <div className="marquee flex w-max items-center">
@@ -102,6 +98,7 @@ export default function PrinciplesSection() {
 
 
         </div>
+
 
 
         {/* Bottom Divider */}
