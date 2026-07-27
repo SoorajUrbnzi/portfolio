@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Link from "next/link";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -20,12 +19,14 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+
   const navItems = [
     { name: "Philosophy", href: "#philosophy" },
     { name: "Vision", href: "#vision" },
     { name: "Statement", href: "#statement" },
     { name: "Contact", href: "#contact" },
   ];
+
 
   return (
     <header
@@ -37,26 +38,42 @@ export default function Navbar() {
           y: ((e.clientY - rect.top) / rect.height) * 100,
         });
       }}
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
-        scrolled
-          ? "backdrop-blur-2xl shadow-[0_12px_40px_rgba(0,0,0,.35)]"
-          : ""
-      }`}
+
+      className={`
+        top-0 left-0 w-full z-50 transition-all duration-500
+        lg:fixed
+        ${scrolled && "lg:backdrop-blur-2xl lg:shadow-[0_12px_40px_rgba(0,0,0,.35)]"}
+      `}
     >
+
+
       {/* Background */}
+
       <div
-        className={`absolute inset-0 transition-all duration-500 ${
-          scrolled
-            ? "opacity-100 bg-[#090B14]/80"
-            : "opacity-0 bg-transparent"
-        }`}
+        className={`
+          absolute inset-0 transition-all duration-500
+          lg:block
+          ${
+            scrolled
+              ? "opacity-100 bg-[#090B14]/80"
+              : "opacity-0 bg-transparent"
+          }
+        `}
       />
 
+
+
       {/* Grid */}
+
       <div
-        className={`absolute inset-0 transition-opacity duration-500 ${
-          scrolled ? "opacity-[0.06]" : "opacity-0"
-        }`}
+        className={`
+          absolute inset-0 transition-opacity duration-500
+          ${
+            scrolled
+              ? "opacity-[0.06]"
+              : "opacity-0"
+          }
+        `}
         style={{
           backgroundImage: `
             linear-gradient(rgba(255,255,255,.12) 1px, transparent 1px),
@@ -66,34 +83,82 @@ export default function Navbar() {
         }}
       />
 
-      {/* Glow */}
+
+
+      {/* Cursor Glow */}
+
       <div
-        className={`absolute inset-0 pointer-events-none transition-opacity duration-500 ${
-          scrolled ? "opacity-100" : "opacity-0"
-        }`}
+        className={`
+          absolute inset-0 pointer-events-none transition-opacity duration-500
+          ${
+            scrolled
+              ? "opacity-100"
+              : "opacity-0"
+          }
+        `}
         style={{
-          background: `radial-gradient(circle at ${mouse.x}% ${mouse.y}%, rgba(108,98,255,.30), transparent 36%)`,
+          background: `
+          radial-gradient(
+            circle at ${mouse.x}% ${mouse.y}%,
+            rgba(108,98,255,.30),
+            transparent 36%
+          )
+          `,
         }}
       />
 
+
+
       {/* Bottom Border */}
+
       <div
-        className={`absolute bottom-0 left-0 w-full h-px transition-opacity duration-500 ${
-          scrolled ? "opacity-100 bg-white/10" : "opacity-0"
-        }`}
+        className={`
+          absolute bottom-0 left-0 w-full h-px transition-opacity duration-500
+          ${
+            scrolled
+              ? "opacity-100 bg-white/10"
+              : "opacity-0"
+          }
+        `}
       />
 
-      <div className="relative mx-auto max-w-[1700px] h-[70px] lg:h-[80px] px-4 sm:px-6 lg:px-10 flex items-center justify-between">
+
+
+
+      <div
+        className="
+        relative mx-auto
+        max-w-[1700px]
+        h-[70px]
+        lg:h-[80px]
+        px-4
+        sm:px-6
+        lg:px-10
+        flex
+        items-center
+        justify-between
+        "
+      >
+
+
 
         {/* Left Empty Space */}
+
         <div></div>
+
+
+
 
         {/* Desktop Navigation */}
 
         <nav className="hidden lg:block">
+
           <ul className="flex items-center gap-14">
+
             {navItems.map((item) => (
+
               <li key={item.name}>
+
                 <a
                   href={item.href}
                   className="
@@ -107,10 +172,17 @@ export default function Navbar() {
                 >
                   {item.name}
                 </a>
+
               </li>
+
             ))}
+
           </ul>
+
         </nav>
+
+
+
 
         {/* Mobile Menu Button */}
 
@@ -130,6 +202,7 @@ export default function Navbar() {
             hover:bg-white/10
           "
         >
+
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="26"
@@ -139,33 +212,54 @@ export default function Navbar() {
             stroke="currentColor"
             strokeWidth="2"
           >
+
             {menuOpen ? (
+
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 d="M6 18L18 6M6 6l12 12"
               />
+
             ) : (
+
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 d="M4 6h16M4 12h16M4 18h16"
               />
+
             )}
+
           </svg>
+
+
         </button>
 
+
       </div>
+
+
+
 
 
       {/* Mobile Menu */}
 
       {menuOpen && (
-        <div className="lg:hidden bg-[#090B14]/95 backdrop-blur-xl border-t border-white/10">
+
+        <div
+          className="
+          lg:hidden
+          bg-[#090B14]
+          border-t
+          border-white/10
+          "
+        >
 
           <nav className="flex flex-col py-3">
 
             {navItems.map((item) => (
+
               <a
                 key={item.name}
                 href={item.href}
@@ -181,14 +275,21 @@ export default function Navbar() {
                   hover:bg-white/5
                 "
               >
+
                 {item.name}
+
               </a>
+
             ))}
+
 
           </nav>
 
+
         </div>
+
       )}
+
 
     </header>
   );
